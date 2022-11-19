@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang=en-US>
+    <head>
+        <meta name="google-site-verification" content="buthsBZ2q6Ex7q3QolrK3ufyvA0nrdt7ntp6w1ZVJzM" />
+        <title>Hydrovolter | Typing Test Guide</title>
+        <link rel="icon" type="image/x-icon" href="/assets/HydroSimple192.png">
+        <meta content="width=device-width,height=device-height,initial-scale=1" name=viewport>
+        <link href=/manifest.json rel=manifest>
+        <meta content=Hydrovolter name=og:site_name>
+        <meta content="Hydrovolter's Website" name=title>
+        <meta content="Hydrovolter | Typing Test Guide" name=description>  <!-- Edit  -->
+        <meta content=#00F6F4 name=theme-color>
+        <meta content=summary_large_image name=twitter:card>
+        <meta content=/assets/blog/typing/typingicon.png name=og:image> <!-- change to path of image you want -->
+        <style>
+            :root {
+    --primary: rgb(35, 35, 35);
+    --secondary: rgb(25, 25, 25);
+    --primary-accent: rgb(250, 250, 250);
+    --secondary-accent: rgb(150, 150, 150)
+}
+
+* {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-style: normal;
+    font-family: "Robot Mono",monospace
+}
+
+::-webkit-scrollbar {
+    display: none
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-accent)
+}
+
+body,html {
+    width: 100%;
+    height: 100%
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    color: var(--primary-accent);
+    background-color: var(--primary)
+}
+
+.emoji {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+    vertical-align: middle
+}
+
+.badge {
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    object-fit: contain;
+    vertical-align: middle
+}
+
+@media screen and (max-width: 600px) {
+    .badge {
+        display:none
+    }
+}
+
+.circle {
+    border-radius: 50%
+}
+
+.hover {
+    transition: transform .5s ease,box-shadow .5s ease
+}
+
+.hover:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 1px 8px 1px rgba(0,0,0,.5)
+}
+
+.section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transition: top .5s ease-in-out,left .5s ease-in-out
+}
+
+.container {
+    display: flex;
+    overflow-y: auto;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 800px;
+    max-height: 80vh;
+    margin: 5vmin;
+    padding: 5vmin;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,.25);
+    border-radius: 25px
+}
+
+#profile {
+    gap: 25px;
+    height: 128px;
+    display: flex
+}
+
+#profile-avatar-container {
+    position: relative
+}
+
+#profile-avatar {
+    border-radius: 15px
+}
+
+#profile-avatar-status-container {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    right: -15px;
+    bottom: -15px;
+    padding: 10px;
+    background-color: var(--primary)
+}
+
+#profile-avatar-status {
+    height: 100%
+}
+
+#profile-activity {
+    display: flex;
+    gap: 15px;
+    padding: 15px;
+    min-width: 50%;
+    border-radius: 15px;
+    background-color: var(--secondary)
+}
+
+#profile-activity-assets {
+    position: relative
+}
+
+#profile-activity-large-image {
+    border-radius: 15px
+}
+
+#profile-activity-small-image-container {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    right: -10px;
+    bottom: -10px;
+    padding: 5px;
+    background-color: var(--secondary)
+}
+
+#profile-activity-small-image {
+    height: 100%
+}
+
+#profile-activity-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+#profile-activity-bar-container {
+    height: 6px;
+    margin-top: 10px;
+    border-radius: 3px;
+    background-color: var(--secondary-accent)
+}
+
+#profile-activity-bar {
+    height: 6px;
+    min-width: 6px;
+    max-width: 100%;
+    border-radius: 3px;
+    background-color: var(--primary-accent)
+}
+
+@media screen and (max-width: 600px) {
+    #profile-activity {
+        display:none
+    }
+}
+
+#social-mobile {
+    display: none
+}
+
+@media screen and (max-width: 600px) {
+    #social-desktop {
+        display:none!important
+    }
+
+    #social-mobile {
+        display: grid
+    }
+}
+
+#social-desktop {
+    gap: 25px;
+    display: flex;
+    justify-content: center
+}
+
+.social-desktop-container {
+    width: 20%;
+    padding: 20px;
+    border-radius: 10px;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.social-desktop-icon {
+    max-width: 100%;
+    max-height: 100%;
+    pointer-events: none
+}
+
+#social-mobile-container {
+    gap: 5px;
+    display: flex
+}
+
+#guide {
+    text-align: center;
+    margin-left: 5vmin;
+    margin-right: 5vmin
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    border-radius: 15px
+}
+
+.card-icon {
+    width: 75px;
+    height: 75px;
+    object-fit: contain
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column
+}
+
+.form-input {
+    border: none;
+    padding: 10px;
+    width: 775px; /* added */
+    border-radius: 10px;
+    color: var(--primary-accent);
+    background-color: var(--secondary)
+}
+
+.form-input::placeholder {
+    color: var(--secondary-accent)
+}
+
+#form-content {
+    resize: none;
+    height: 100%;
+    width: 775px; /* added */
+}
+
+#form-error {
+    align-self: flex-end
+}
+
+#form-submits {
+    border: none;
+    cursor: pointer;
+    align-self: flex-end;
+    width: 796px; /* 300 */
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--primary-accent);
+    background-color: var(--secondary)
+}
+
+#form-submits:disabled {
+    cursor: not-allowed;
+    color: var(--secondary-accent)
+}
+
+@media screen and (max-width: 600px) {
+    #form-submits {
+        width:100%
+    }
+}
+
+img {
+  width: 100%;
+  height: auto;
+  /* Magic! */
+  max-width: 50vw;
+}
+
+
+        </style>
+    </head>
+    <body>
+        <div class="section" style="left:0;top:0" id="center">
+            <div class="container">
+
+                <h1>    <!-- Edit -->
+                    Typing Test User Guide - 06/09/22
+                </h1>
+                <p>     <!-- Edit -->
+                    
+                    
+<h2>Redo</h2>
+Hold "shift" while pressing the Redo button to restart the typing test using the same word list
+<br><br>
+Press "esc" to restart a typing test
+<h2>Language</h2>
+Type the language code in the text box then hit:<br>
+<br>Windows: alt + l<br>Mac: cmd + ctrl + l<br>Linux: super + ctrl + l or alt + l
+
+<h3>Available Languages:</h3>
+
+english<br>
+english1000<br>
+italian<br>
+german<br>
+spanish<br>
+chinese<br>
+korean<br>
+polish<br>
+swedish<br>
+dots<br>
+symbols<br>
+numbers<br>
+punjabi<br>
+french<br>
+portuguese<br>
+
+<h2>Typing Mode</h2>
+Type the mode code in the text box then hit:<br>
+<br>Windows: alt + m<br>Mac: cmd + ctrl + m<br>Linux: super + ctrl + m or alt + m
+
+<h3>Available Modes:</h3>
+
+wordcount<br>
+time<br>
+
+<h2>Punctuation</h2>
+
+Type "true" or "false" then hit:<br> 
+<br>Windows: alt + p<br>Mac: cmd + ctrl + p<br>Linux: super + ctrl + p or alt + p<br><br>To activate/deactivate punctuation
+
+<h2>Theme Menu</h2>
+In this menu you can see all the available themes to choose from, along with a small preview.<br><br>Hit "escape" or click "back" to exit
+
+<h2>Calculations</h2>
+WPM (Words Per Minute): total number of characters (including spaces) of words you correct divided by five then divided by the time starting from first character typed<br><br>
+
+ACC (Accuracy): total number of characters (including spaces) of words you correct divided by all character in the list of words
+
+
+                </p>
+                <div>
+                    
+                </div>
+
+            </div>
+            <p id="guide"></p>
+            <br>
+            
+            <p3>- Hydrovolter</p3>
+
+            <div class="container">
+                <a href="./../">Back to Typing Test</a>
+            </div>
+        </div>
+</body>
